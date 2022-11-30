@@ -15,6 +15,7 @@
 		BD499DA129363D2D008B602B /* SessionPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD499DA029363D2D008B602B /* SessionPagingView.swift */; };
 		BD499DA329363F2D008B602B /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD499DA229363F2D008B602B /* MetricsView.swift */; };
 		BD499DA52936452F008B602B /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD499DA42936452F008B602B /* ElapsedTimeView.swift */; };
+		BD499DA729368861008B602B /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD499DA629368861008B602B /* ControlsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BD499DA029363D2D008B602B /* SessionPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPagingView.swift; sourceTree = "<group>"; };
 		BD499DA229363F2D008B602B /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
 		BD499DA42936452F008B602B /* ElapsedTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeView.swift; sourceTree = "<group>"; };
+		BD499DA629368861008B602B /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				BD499D8E2934EAB9008B602B /* StartView.swift */,
 				BD499DA029363D2D008B602B /* SessionPagingView.swift */,
 				BD499DA229363F2D008B602B /* MetricsView.swift */,
+				BD499DA629368861008B602B /* ControlsView.swift */,
 				BD499DA42936452F008B602B /* ElapsedTimeView.swift */,
 				BD499D902934EABA008B602B /* Assets.xcassets */,
 				BD499D922934EABA008B602B /* Preview Content */,
@@ -205,6 +208,7 @@
 				BD499D8D2934EAB9008B602B /* f1projectApp.swift in Sources */,
 				BD499DA52936452F008B602B /* ElapsedTimeView.swift in Sources */,
 				BD499DA329363F2D008B602B /* MetricsView.swift in Sources */,
+				BD499DA729368861008B602B /* ControlsView.swift in Sources */,
 				BD499DA129363D2D008B602B /* SessionPagingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
