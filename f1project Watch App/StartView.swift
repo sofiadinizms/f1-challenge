@@ -9,44 +9,72 @@ import SwiftUI
 import HealthKit
 
 struct StartView: View {
+    @EnvironmentObject var workoutManager: WorkoutManager
     
     var workoutTypes: [HKWorkoutActivityType] = [.cycling, .running, .walking]
     
     var body: some View {
-        List(workoutTypes) { workoutType in
-            NavigationLink(workoutType.name, destination: Text(workoutType.name)).padding(EdgeInsets(top: 20, leading: 5, bottom: 20, trailing: 5)
-          )
+        NavigationStack {
+            List(workoutTypes) { workoutType in
+                NavigationLink(workoutType.name, value: workoutType)
+                    .padding(
+                        EdgeInsets(top: 20, leading: 5, bottom: 20, trailing: 5))
+            }
+            .navigationDestination(for: HKWorkoutActivityType.self) { workoutType in
+                
+                SessionPagingView()
+                
+            }
+            .listStyle(.carousel)
+            
+            .navigationBarTitle("Workouts")
+            
+            .onChange(of: presentedWorkout) { _ in
+                
+                guard let workout = presentedWorkout.last else { return }
+                
+                workoutManager.selectedWorkout = workout
+                
+            }
+            
         }
-        .listStyle(.carousel)
-        .navigationBarTitle("Workouts")
-    }
-}
-
-extension HKWorkoutActivityType: Identifiable {
-    public var id: UInt {
-        rawValue
+        
+        .onAppear {
+            
+            workoutManager.requestAuthorization()
+            
+        }
+        
     }
     
-    var name: String {
-        switch self{
-        case .running:
-            return "Run"
-        case .cycling:
-            return "Bike"
-        case .walking:
-            return "Walk"
-        default:
-            return ""
+    
+    
+    
+    extension HKWorkoutActivityType: Identifiable {
+        public var id: UInt {
+            rawValue
+        }
+        
+        var name: String {
+            switch self{
+            case .running:
+                return "Run"
+            case .cycling:
+                return "Bike"
+            case .walking:
+                return "Walk"
+            default:
+                return ""
+            }
         }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        StartView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            StartView()
+        }
     }
-}
-
-
-
-
+    
+    
+    
+    

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1F71EF2939198000BD7292 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F71EE2939198000BD7292 /* SummaryView.swift */; };
+		BD1F71F1293C1DE200BD7292 /* ActivityRingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F71F0293C1DE200BD7292 /* ActivityRingsView.swift */; };
+		BD1F71F3293CC77C00BD7292 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1F71F2293CC77C00BD7292 /* WorkoutManager.swift */; };
 		BD499D882934EAB9008B602B /* f1project Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BD499D872934EAB9008B602B /* f1project Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BD499D8D2934EAB9008B602B /* f1projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD499D8C2934EAB9008B602B /* f1projectApp.swift */; };
 		BD499D8F2934EAB9008B602B /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD499D8E2934EAB9008B602B /* StartView.swift */; };
@@ -43,6 +46,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BD1F71EE2939198000BD7292 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		BD1F71F0293C1DE200BD7292 /* ActivityRingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingsView.swift; sourceTree = "<group>"; };
+		BD1F71F2293CC77C00BD7292 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		BD1F71F4293CD68600BD7292 /* f1project Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "f1project Watch App.entitlements"; sourceTree = "<group>"; };
+		BD1F71F5293CD69D00BD7292 /* f1project-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "f1project-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BD499D812934EAB9008B602B /* f1project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = f1project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD499D872934EAB9008B602B /* f1project Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "f1project Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD499D8C2934EAB9008B602B /* f1projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = f1projectApp.swift; sourceTree = "<group>"; };
@@ -86,8 +94,13 @@
 		BD499D8B2934EAB9008B602B /* f1project Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				BD1F71F5293CD69D00BD7292 /* f1project-Watch-App-Info.plist */,
+				BD1F71F4293CD68600BD7292 /* f1project Watch App.entitlements */,
 				BD499D8C2934EAB9008B602B /* f1projectApp.swift */,
 				BD499D8E2934EAB9008B602B /* StartView.swift */,
+				BD1F71EE2939198000BD7292 /* SummaryView.swift */,
+				BD1F71F2293CC77C00BD7292 /* WorkoutManager.swift */,
+				BD1F71F0293C1DE200BD7292 /* ActivityRingsView.swift */,
 				BD499DA029363D2D008B602B /* SessionPagingView.swift */,
 				BD499DA229363F2D008B602B /* MetricsView.swift */,
 				BD499DA629368861008B602B /* ControlsView.swift */,
@@ -205,9 +218,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD499D8F2934EAB9008B602B /* StartView.swift in Sources */,
+				BD1F71EF2939198000BD7292 /* SummaryView.swift in Sources */,
+				BD1F71F3293CC77C00BD7292 /* WorkoutManager.swift in Sources */,
 				BD499D8D2934EAB9008B602B /* f1projectApp.swift in Sources */,
 				BD499DA52936452F008B602B /* ElapsedTimeView.swift in Sources */,
 				BD499DA329363F2D008B602B /* MetricsView.swift in Sources */,
+				BD1F71F1293C1DE200BD7292 /* ActivityRingsView.swift in Sources */,
 				BD499DA729368861008B602B /* ControlsView.swift in Sources */,
 				BD499DA129363D2D008B602B /* SessionPagingView.swift in Sources */,
 			);
@@ -338,12 +354,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "f1project Watch App/f1project Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"f1project Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = Z4T4DUM2DD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "f1project-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = f1project;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -368,12 +386,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "f1project Watch App/f1project Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"f1project Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = Z4T4DUM2DD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "f1project-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = f1project;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -406,7 +426,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sofia.f1project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
 			};
 			name = Debug;
 		};
@@ -422,7 +446,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sofia.f1project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
